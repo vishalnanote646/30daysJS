@@ -1,12 +1,12 @@
 //task 1 (object)
 let book = {
-    title : "rich dad poor dad",
-    auther : "robbert kiyosaki",
-    year : 1997
+    title: "rich dad poor dad",
+    auther: "robbert kiyosaki",
+    year: 1997
 
 };
 
-console.log("deitails of book :",book);
+console.log("deitails of book :", book);
 
 
 

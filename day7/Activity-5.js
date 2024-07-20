@@ -1,5 +1,5 @@
 //task 8
-/*let book = {
+let book = {
     
         title: "rich dad poor dad",
         auther: "robbert kiyosaki",
@@ -8,10 +8,10 @@
 
 for(let use in book){
     console.log(use,book[use]);
-} */
+} 
 
 
-//task 9
+
 let book2 = {
     
     title: "rich dad poor dad",
