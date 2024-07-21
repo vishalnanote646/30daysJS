@@ -1,0 +1,38 @@
+<!--task3-->
+
+<!DOCTYPE html>
+<head>
+    <title>task3</title>
+</head>
+<body>
+    <p>this in normal tag</p>
+   </body>
+<script>
+    let add = document.querySelector("body");
+    console.log(add);
+    add.innerHTML = add.innerHTML + "<div>this div added using dom manipulation</div>"
+</script>
+</html>
+
+
+<!--task4-->
+
+<!DOCTYPE html>
+<head>
+    <title>task4</title>
+</head>
+<body>
+    <h2>this is list of fruits :</h2>
+    <ul id="list">
+        <li>mango</li>
+        <li>apple</li>
+        <li>orange</li>
+    </ul>
+    
+</body>
+<script>
+    let now = document.querySelector("#list");
+    console.log(now);
+    now.innerHTML = now.innerHTML + "<li>kiwi</li>";
+</script>
+</html>

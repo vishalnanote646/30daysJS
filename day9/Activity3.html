@@ -1,0 +1,34 @@
+<!--task5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>to remove element from html using dom</h1>
+    <p>this is going to remove</p>
+    
+</body>
+<script>
+    const remove = document.querySelector("p").remove()
+    console.log(remove);
+</script>
+</html>
+
+<!---task5-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom</title>
+</head>
+<body id="main">
+    <p class="fchild">i am the first child </p>
+    <p class="lchild">i am the last child </p>
+</body>
+<script>
+    let lastchild = document.querySelector("#main").lastElementChild.remove();
+ 
+</script>
+</html>

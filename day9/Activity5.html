@@ -1,0 +1,23 @@
+<!--task9-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="one">this is old paragraph</p>
+    <button id="two">click me!</button>
+
+</body>
+<script>
+    const messege = document.getElementById('one');
+    const button = document.getElementById('two');
+    button.addEventListener('click',function() {
+    messege.textContent = 'this is updated one';
+    });
+
+
+</script>
+</html>

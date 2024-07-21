@@ -1,0 +1,43 @@
+<!--task7-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dom</title>
+</head>
+
+<body>
+    <h2>hello world!</h2>
+    <p id="hello">hellooooooooooo</p>
+
+</body>
+<script>
+    const change = document.querySelector("#hello")
+    console.log(change);
+    change.setAttribute("id", "namaste");
+</script>
+
+</html>
+<!--task8-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="#acb">hello</h1>
+</body>
+<script>
+    const a = document.getElementById("#acb");
+    a.style.color= 'red';
+    a.style.background= 'yellow';
+    a.style.fontsize='100px';
+    a.classList.add("red-background");
+    a.style.removeProperty('background')
+  
+  </script>
+</html>
+
+
