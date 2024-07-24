@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <h2>following is the list of you items</h2>
+    <ul id="list">
+        <li>no product</li>
+    </ul>
+    <button id="add">ADD</button>
+
+</body>
+<script>
+    const list = document.getElementById("list");   
+    const add = document.getElementById("add");
+    let productCount =0;
+
+    add.addEventListener("click",(e)=>{
+        productCount++
+    
+
+    const newpro =    document.createElement("li");
+    newpro.textContent=`Product : ${productCount}`;
+
+    list.appendChild(newpro);
+    });
+</script>
+</html>

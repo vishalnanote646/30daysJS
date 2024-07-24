@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event</title>
+</head>
+
+<body>
+    <form id="form">
+        <label for="name" id="name">NAME</label>
+        <input type="text" id="input1" placeholder="enter the name">
+        <br>
+        <label for="password" id="password">password</label>
+        <input type="password" id="pass" placeholder="enter the passowrd">
+        <br>
+        <button id="button"> submit</button>
+        <p id="save"></p>
+
+    </form>
+</body>
+<script>
+    const form = document.getElementById("form");
+    const save = document.getElementById("save");
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        const result = document.getElementById("input1");
+        const pass = document.getElementById("pass");
+        save.textContent=  input1.value;
+        save.textContent+= pass.value;
+    })
+   
+    
+</script>
+</html>

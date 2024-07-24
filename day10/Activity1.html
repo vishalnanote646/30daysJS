@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<style>
+    body{
+        background-color: cadetblue;
+        border: 2px dotted red;
+        text-align: center;
+    }
+    #old{
+        color: red;
+        font-size: 20px;
+    }
+    #btn{
+        color:red;
+        background-color: green;
+        border: 2px solid yellow;
+
+
+    }
+</style>
+
+<body>
+    <p id="old">this is old</p>
+    <button id="btn">submit</button>
+</body>
+<script>
+
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+        const id2 = document.getElementById("old");
+        id2.innerText = "this is new";
+    })
+</script>
+
+</html>

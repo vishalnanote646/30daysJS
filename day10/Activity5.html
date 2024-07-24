@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event delegation</title>
+</head>
+<body>
+    <div>
+        <ul id="main2">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+        </ul>
+    </div>
+    <p id="result"></p>
+</body>
+<script>
+    const main2 = document.getElementById("main2");
+ 
+    main2.addEventListener("click",(e)=>{
+        if(event.target.tagName === "LI"){
+       console.log(e.target.textContent);
+    }  
+    });
+   
+</script>
+</html>

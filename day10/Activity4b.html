@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chagne event</title>
+</head>
+<body>
+    <h2>change event</h2>
+    <p id="save">the city</p>
+    <label for="selection">select your city</label>
+    <select name="location" id="select"  aria-placeholder="select your city">
+        <option value="" aria-placeholder="select your city"></option>
+        <option value="mumbai" id="opt1">mumbai</option>
+        <option value="delhi" id="opt2">delhi</option>
+        <option value="hydrabad" id="opt3">hydrabad</option>
+        <option value="bengluru" id="opt4">bengluru</option>
+      
+    </select>
+
+</body>
+<script>
+    const select = document.getElementById("select");
+    const save = document.getElementById("save")
+    select.addEventListener("change",(e)=>{
+       save.innerHTML=`the city is : ${select.value}`
+    })
+</script>
+</html>

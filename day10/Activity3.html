@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <p>fill the following </p>
+    <input type="text" placeholder="any any key" id="input">
+    <p id="result"></p>
+
+    <p>this is keyup event</p>
+    <input type="text" id="contain" placeholder="press anything to print">
+    <p id="show"></p>
+
+</body>
+<script>
+    const input = document.getElementById("input");
+    
+    input.addEventListener("keypress",(e)=>{
+        const result = document.getElementById("result");
+        result.textContent += `${e.code}`
+    })
+
+
+    const input2 = document.querySelector("#input");
+    const show = document.querySelector("#show");
+    input2.addEventListener("keyup",(e)=>{
+        show.textContent=e.target.value;
+    })
+
+</script>
+</html>
